@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sathwik Writings | SCU Screenwriting Studio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎬 Sathwik Writings</h1>
+    <p class="subtitle">Write. Imagine. Create your Cinematic Universe.</p>
+  </header>
+
+  <main>
+    <section class="editor">
+      <input type="text" id="title" placeholder="Enter screenplay title..." />
+      <textarea id="script" placeholder="Start your story here..."></textarea>
+
+      <div class="buttons">
+        <button id="saveBtn">💾 Save</button>
+        <button id="loadBtn">📂 Load</button>
+        <button id="clearBtn">🧹 Clear</button>
+        <button id="pdfBtn">📄 Export PDF</button>
+        <button id="fdxBtn">🎬 Export FDX</button>
+      </div>
+    </section>
+
+    <section class="ai-assistant">
+      <h2>🤖 AI Co-Writer</h2>
+      <textarea id="aiInput" placeholder="Ask your co-writer for ideas..."></textarea>
+      <div class="ai-controls">
+        <select id="mode">
+          <option value="creative">Creative Mode</option>
+          <option value="professional">Professional Mode</option>
+        </select>
+        <input
+          type="password"
+          id="apiKey"
+          placeholder="Enter your OpenAI API key"
+        />
+        <button id="askBtn">✨ Ask AI</button>
+      </div>
+      <div id="aiResponse" class="response"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Sathwik Cinematic Universe (SCU) | Built by Sathwik</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
